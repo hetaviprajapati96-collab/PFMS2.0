@@ -21,10 +21,19 @@ try:
 except ImportError:
     PDF_SUPPORT = False
 
-# Securely retrieve the Xkiro API Key from environment or Streamlit secrets
+# Priority: Environment variable (.env locally) -> Streamlit Cloud Secrets
 XKIRO_API_KEY = os.getenv("XKIRO_API_KEY")
-if not XKIRO_API_KEY and hasattr(st, "secrets"):
-    XKIRO_API_KEY = st.secrets.get("XKIRO_API_KEY")
+
+if not XKIRO_API_KEY:
+    try:
+        XKIRO_API_KEY = st.secrets.get("XKIRO_API_KEY")
+    except Exception as e:
+        st.error(f"Failed to load Streamlit secrets: {e}")
+
+# Validate before calling the model
+if not XKIRO_API_KEY:
+    st.error("Missing XKIRO_API_KEY. Please configure it in your Streamlit Cloud Secrets.")
+    st.stop()
 
 st.set_page_config(
     page_title="PFMS Vigilance AI - Gujarat Infrastructure Portal",
