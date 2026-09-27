@@ -23,8 +23,8 @@ except ImportError:
 
 # Securely retrieve the Xkiro API Key from environment or Streamlit secrets
 XKIRO_API_KEY = os.getenv("XKIRO_API_KEY")
-if not XKIRO_API_KEY and hasattr(st, "secrets") and "XKIRO_API_KEY" in st.secrets:
-    XKIRO_API_KEY = st.secrets["XKIRO_API_KEY"]
+if not XKIRO_API_KEY and hasattr(st, "secrets"):
+    XKIRO_API_KEY = st.secrets.get("XKIRO_API_KEY")
 
 st.set_page_config(
     page_title="PFMS Vigilance AI - Gujarat Infrastructure Portal",
