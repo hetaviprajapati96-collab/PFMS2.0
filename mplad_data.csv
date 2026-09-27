@@ -1,0 +1,16 @@
+Project_Name,District,Implementing_Agency,Sanctioned_Outlay_Lakhs,Spent_Amount_Lakhs,Completion_Status,AI_Risk_Pct,Remarks
+Storm Water & Drainage,Ahmedabad North,District Rural Dev Agency (DRDA),75.0,74.2,Completed,12,None / Normal
+LED Street Lights,Vadodara,Surya Renewable Infra Pvt Ltd,25.0,43.5,In Progress,88,Severe Budget Overrun
+District Hospital,Rajkot,MedTech Civil Corp,120.0,118.0,Completed,15,None / Normal
+Water Establishment,Surat South,Jal Vikas Nigam,45.0,44.8,Completed,8,None / Normal
+Community Centre Hall,Surat North,Apex Civil Works,90.0,90.0,Delayed,92,Duplicate Disbursement Flagged
+Higher Secondary School,Gandhinagar,Edutech Solutions,35.0,4.5,Delayed,85,Fund Underutilization
+Flyover Extension,Ahmedabad South,Apex Civil Works,210.0,265.0,In Progress,96,Cost Escalation & Vendor Delay
+Skill Development Center,Bhavnagar,GreenEarth Infra,60.0,58.0,Completed,10,None / Normal
+Solar Park Infrastructure,Patan,Surya Renewable Infra Pvt Ltd,25.0,25.0,Completed,78,Duplicate Vendor Pattern
+Public Building,Kheda,District Magistrate Nodal Office,30.0,29.1,Completed,14,None / Normal
+Primary Health Centre,Junagadh,MedTech Civil Corp,40.0,38.5,Completed,11,None / Normal
+Check Dam Construction,Amreli,Jal Vikas Nigam,50.0,52.0,In Progress,45,Minor Schedule Lag
+Smart City Control Hub,Vadodara,Apex Civil Works,150.0,140.0,In Progress,22,None / Normal
+Library & Reading Room,Jamnagar,Edutech Solutions,20.0,19.8,Completed,9,None / Normal
+Rural Road Network,Banaskantha,District Rural Dev Agency (DRDA),85.0,84.0,Completed,18,None / Normal
